@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán | Ananas</title>
+    <link
+      rel="shortcut icon"
+      href="../images/Logo_Ananas_Header.svg"
+      type="image/x-icon"
+    />
+    <!-- THEME -->
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../libs/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../themes/css/main.css" />
+    <link rel="stylesheet" href="../themes/css/style_section.css">
+    <!-- JS -->
+    <script src="../libs/jquery/jquery-3.5.1.slim.js"></script>
+    <script src="../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="../themes/js/main.js"></script>
+</head>
+<body>
+    <main id="checkout_page">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col-md-7 bg-warning">
+                    <section id="info_shipping">
+                        <a class="btn" data-toggle="collapse" href="#address_collapse" aria-expanded="false" aria-controls="address_collapse">
+                            <span>THÔNG TIN GIAO HÀNG</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse show" id="address_collapse">
+                            <form id="frm_post_address">
+                                <div class="form-group">
+                                    <label for="getNameCus" class="col-md-3">Họ tên:</label>
+                                    <input type="text" name="getNameCus" id="getNameCus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="getPhoneCus" class="col-md-3">Số điện thoại:</label>
+                                    <input type="text" name="getPhoneCus" id="getPhoneCus">
+                                </div>
+                                <div class="form-group">
+                                    <label for="getAddress" class="col-md-3">
+                                        Địa chỉ giao hàng:
+                                    </label>
+                                    <input type="text" name="getAddress" id="getAddress">
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+                <div class="con-md-5">2</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

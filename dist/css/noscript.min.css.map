@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AAgBE,AAEE,IAFE,AAAA,WAAW,CADhB,OAAO,AAEJ,IAAI,CACF,CAAC,AAAC,CACH,OAAO,CAAE,CAAC,CACV,AAJH,AAME,IANE,AAAA,WAAW,CADhB,OAAO,AAEJ,IAAI,CAKJ,KAAK,AAAC,CIiVC,cAAsB,CAAC,IAAC,CAAxB,iBAAsB,CAAC,IAAC,CAAxB,aAAsB,CAAC,IAAC,CAAxB,SAAsB,CAAC,IAAC,CJ/U9B",
+    "sources": [
+        "../../src/libs/Glider.js-master/docs/assets/sass/noscript.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_vars.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_functions.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_mixins.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_vendor.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_breakpoints.scss",
+        "../../src/libs/Glider.js-master/docs/assets/sass/libs/_html-grid.scss"
+    ],
+    "names": [],
+    "file": "noscript.min.css"
+}

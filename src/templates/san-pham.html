@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananas | Sản phẩm</title>
+    <link rel="shortcut icon" href="../images/Logo_Ananas_Header.svg" type="image/x-icon">
+    <!-- THEME -->
+    <script src="../libs/jquery/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../libs/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../libs/Glider.js-master/glider.css">
+    <link rel="stylesheet" href="../libs/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" href="../themes/css/main.css">
+    <link rel="stylesheet" href="../themes/css/style_section.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <div class="container-fluid">
+        <div id="top-head">
+          <div class="container">
+            <div class="d-flex">
+              <div class="col-md-4 col-sm-0"></div>
+              <div class="col-md-8 col-sm-12">
+                <ul class="d-flex">
+                  <li>
+                    <img src="../images/icon_dang_nhap.png" alt="" />
+                    <a href="#" data-toggle="modal" data-target="#funct_login">
+                      <span id="get_name_user">Đăng nhập</span>
+                    </a>
+                  </li>
+                  <li>
+                    <img src="../images/icon_tra_cuu_don_hang.png" alt="" />
+                    <a href="#">Tra cứu đơn hàng</a>
+                  </li>
+                  <li>
+                    <img src="../images/icon_tim_cua_hang.png" alt="" />
+                    <a href="#">Tìm cửa hàng</a>
+                  </li>
+                  <li>
+                    <img src="../images/icon_heart_header.png" alt="" />
+                    <a href="#">Yêu thích</a>
+                  </li>
+                  <li>
+                    <img src="../images/icon_gio_hang.png" alt="" />
+                    <a href="#">Giỏ hàng</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar" class="bg-light">
+          <div class="container">
+            <div class="d-flex">
+              <div class="col-md-2 d-flex justify-content-center">
+                <a href="trang-chu.html">
+                  <img src="../images/Logo_Ananas_Header.png" alt="" />
+                </a>
+              </div>
+              <div class="col-md-7">
+                <ul class="menu d-flex">
+                  <li class="menu-item">
+                    <a href="#" class="d-flex">
+                      <h4>SẢN PHẨM</h4>
+                      <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="menu-sub menu-sub--product">
+                      <div class="container">
+                        <ul class="d-flex">
+                          <li>
+                            <a href="">
+                              <div class="card">
+                                <img
+                                  src="../images/Menu_Nam.jpg"
+                                  alt=""
+                                  class="card__image"
+                                />
+                                <div class="card__content">CHO NAM</div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="card">
+                                <img
+                                  src="../images/Menu_Nu.jpg"
+                                  alt=""
+                                  class="card__image"
+                                />
+                                <div class="card__content">CHO NỮ</div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="card">
+                                <img
+                                  src="../images/Menu_Sale-off.jpg"
+                                  alt=""
+                                  class="card__image"
+                                />
+                                <div class="card__content">OUTLET SALE</div>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="">
+                              <div class="card">
+                                <img
+                                  src="../images/Menu_Phu-kien.jpg"
+                                  alt=""
+                                  class="card__image"
+                                />
+                                <div class="card__content">
+                                  THỜI TRANG & PHỤ KIỆN
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="d-flex">
+                      <h4>NAM</h4>
+                      <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="menu-sub menu-sub--male">
+                      <div class="container container--w">
+                        <div class="d-flex my-3">
+                          <div class="col-md-4 col-sm-12">
+                            <div class="box box--devide">
+                              <h3>
+                                <a href="#">NỔI BẬT</a>
+                              </h3>
+                              <div class="box__group">
+                                <ul>
+                                  <li><a href="">Best Seller</a></li>
+                                  <li><a href="">New Arrival</a></li>
+                                  <li><a href="">Sale off</a></li>
+                                </ul>
+                                <div>
+                                  <div href="#" class="line_head">Tất cả giày</div>
+                                  <a href="">Pineapple x Lucky Luke</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-8 col-sm-12 ml-5">
+                            <div class="d-flex">
+                              <div class="col-md-6">
+                                <div class="box">
+                                 <h3>
+                                   <a href="#">GIÀY</a>
+                                 </h3>
+                                  <div class="box__group">
+                                    <ul>
+                                      <li class="line_head">Dòng sản phẩm</li>
+                                      <li><a href="">Basas</a></li>
+                                      <li><a href="">Vintas</a></li>
+                                      <li><a href="">Urbas</a></li>
+                                      <li><a href="">Pattas</a></li>
+                                      <li><a href="">Track 6</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li class="line_head">Style</li>
+                                      <li><a href="">High Top</a></li>
+                                      <li><a href="">Low Top</a></li>
+                                      <li><a href="">Slip-on</a></li>
+                                    </ul>
+                                    <a href="#" class="line_head">Tất cả giày</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="box">
+                                  <h3>
+                                    <a href="#">THỜI TRANG & PHỤ KIỆN</a>
+                                  </h3>
+                                   <div class="box__group">
+                                     <ul>
+                                       <li class="line_head">Nửa trên</li>
+                                       <li><a href="">Basic Tee</a></li>
+                                       <li><a href="">Sweetshirt</a></li>
+                                       <li><a href="">Hoodie</a></li>
+                                     </ul>
+                                     <ul>
+                                       <li class="line_head">Phụ kiện</li>
+                                       <li><a href="">Nón</a></li>
+                                       <li><a href="">Dây giày</a></li>
+                                       <li><a href="">Vớ</a></li>
+                                     </ul>
+                                     <a href="#" class="line_head">Tất cả giày</a>
+                                   </div>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="d-flex">
+                      <h4>NỮ</h4>
+                      <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="menu-sub menu-sub--female">
+                      <div class="container container--w">
+                        <div class="d-flex my-3">
+                          <div class="col-md-4 col-sm-12">
+                            <div class="box box--devide">
+                              <h3>
+                                <a href="#">NỔI BẬT</a>
+                              </h3>
+                              <div class="box__group">
+                                <ul>
+                                  <li><a href="">Best Seller</a></li>
+                                  <li><a href="">New Arrival</a></li>
+                                  <li><a href="">Sale off</a></li>
+                                </ul>
+                                <div>
+                                  <div href="#" class="line_head">Tất cả giày</div>
+                                  <a href="">Pineapple x Lucky Luke</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-8 col-sm-12 ml-5">
+                            <div class="d-flex">
+                              <div class="col-md-6">
+                                <div class="box">
+                                 <h3>
+                                   <a href="#">GIÀY</a>
+                                 </h3>
+                                  <div class="box__group">
+                                    <ul>
+                                      <li class="line_head">Dòng sản phẩm</li>
+                                      <li><a href="">Basas</a></li>
+                                      <li><a href="">Vintas</a></li>
+                                      <li><a href="">Urbas</a></li>
+                                      <li><a href="">Pattas</a></li>
+                                      <li><a href="">Track 6</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li class="line_head">Style</li>
+                                      <li><a href="">High Top</a></li>
+                                      <li><a href="">Low Top</a></li>
+                                      <li><a href="">Slip-on</a></li>
+                                    </ul>
+                                    <a href="#" class="line_head">Tất cả giày</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="box">
+                                  <h3>
+                                    <a href="#">THỜI TRANG & PHỤ KIỆN</a>
+                                  </h3>
+                                   <div class="box__group">
+                                     <ul>
+                                       <li class="line_head">Nửa trên</li>
+                                       <li><a href="">Basic Tee</a></li>
+                                       <li><a href="">Sweetshirt</a></li>
+                                       <li><a href="">Hoodie</a></li>
+                                     </ul>
+                                     <ul>
+                                       <li class="line_head">Phụ kiện</li>
+                                       <li><a href="">Nón</a></li>
+                                       <li><a href="">Dây giày</a></li>
+                                       <li><a href="">Vớ</a></li>
+                                     </ul>
+                                     <a href="#" class="line_head">Tất cả giày</a>
+                                   </div>
+                                 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="d-flex">
+                      <h4>SALE OFF</h4>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#" class="d-flex">
+                      <img src="../images/DiscoverYOU.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <form id="searchBox">
+                  <div class="form-group d-flex">
+                    <input
+                      type="text"
+                      name="searchInput"
+                      id="searchInput"
+                      class="form-control"
+                      placeholder="Bạn cần tìm..."
+                      aria-describedby="helpId"
+                    />
+                    <button id="searchBtn">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="section_banner">
+        <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <a class="carousel-item active">
+                    free shipping hoá đơn từ 800k!
+                </a>
+                <a class="carousel-item">
+                    hàng 2 tuần nhận đổi - giày nữa năm bảo hành
+                </a>
+                <a class="carousel-item">
+                    buy more pay less - áp dụng khi mua phụ kiện
+                </a>
+            </div>
+            <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
+                <!-- carousel-control-prev-icon -->
+                <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
+                <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <main id="product_page">
+        <div class="container">
+          <section id="add_Ads">
+            <div id="ADCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#ADCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#ADCarousel" data-slide-to="1"></li>
+                <li data-target="#ADCarousel" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                  <a href="#" class="carousel-item active">
+                      <img src="../images/banner_aboutUs_2m.png" alt="">
+                  </a>
+                  <a href="#" class="carousel-item">
+                      <img src="../images/banner_aboutUs_2m_2.png" alt="">
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img src="../images/banner_aboutUs_2m_3.png" alt="">
+                  </a>
+              </div>
+              <!-- <a class="carousel-control-prev" href="#ADCarousel" role="button" data-slide="prev">
+                  <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#ADCarousel" role="button" data-slide="next">
+                  <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a> -->
+          </div>
+        </section>
+            <div class="d-flex">
+                <article class="col-md-3">
+                    <section id="menu_side">
+                      <h4>TÌM SẢN PHẨM THEO:</h4>
+                        <!-- <div class="row--side d-flex" id="for_prod">
+                                <h4 class="col-md-4">
+                                    <a href="#" class="active">TẤT CẢ</a>
+                                </h4>
+                                <h4 class="col-md-4">
+                                    <a href="#">NAM</a>
+                                </h4>
+                                <h4 class="col-md-4">
+                                    <a href="#">NỮ</a>
+                                </h4>
+                        </div> -->
+                        <!-- <div class="row--side" id="kind_of_prod">
+                            <ul>
+                                <li><a href="#">Giày</a></li>
+                                <li><a href="#">Nửa trên</a></li>
+                                <li><a href="#">Phụ kiện</a></li>
+                            </ul>    
+                        </div> -->
+                        <div id="menuCollapes" role="tablist" aria-multiselectable="true">
+                          <div class="card">
+                            <div class="card-header" role="tab" id="state_prod">
+                              <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#menuCollapes" href="#state_prod_content" aria-expanded="true" aria-controls="state_prod_content" class="title_card">
+                                  TRẠNG THÁI <i class="fas fa-chevron-up"></i>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="state_prod_content" class="collapse show in" role="tabpanel" aria-labelledby="state_prod">
+                                <ul class="card-body">
+                                  <li>
+                                    <a href="#">Sale off</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Best Seller</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">New Arrival</a>
+                                  </li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab" id="style_prod">
+                              <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#menuCollapes" href="#style_prod_content" aria-expanded="true" aria-controls="style_prod_content" class="title_card">
+                                 KIỂU DÁNG <i class="fas fa-chevron-up"></i>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="style_prod_content" class="collapse in show" role="tabpanel" aria-labelledby="style_prod">
+                                <ul class="card-body">
+                                  <li>
+                                    <a href="#">Low Top</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Hign Top</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Slip-on</a>
+                                  </li>
+                                </ul>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab" id="stream_prod">
+                              <h5 class="mb-0">
+                                <a data-toggle="collapse" data-parent="#menuCollapes" href="#stream_prod_content" aria-expanded="true" aria-controls="style_prod_content" class="title_card">
+                                 DÒNG SẢN PHẨM <i class="fas fa-chevron-up"></i>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="stream_prod_content" class="collapse in show" role="tabpanel" aria-labelledby="stream_prod">
+                                <ul class="card-body">
+                                  <li>
+                                    <a href="#">Tất cả</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Basas</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Vintas</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Urbas</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Pattas</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Track 6</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Cap | Nón</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Shoes Lace | Dây giày</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Socks | Vớ</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Basic Tee | Áo thun cơ bản</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Sweatshirt</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">Hoodie</a>
+                                  </li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </section>
+                </article>
+                <article class="col-md-9">
+                  <!-- <div id="poster_prod">
+                    <img src="../images/poster_prod.png" alt="" class="w-100">
+                  </div> -->
+                  <section id="section_prod_list">
+                    <div class="container">
+                      <div id="page_prods" class="row--grid hip-grid">
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                        <div class="card card_product hip-item">
+                          <a href="#" class="card-top">
+                            <div  class="card-img-top inner">
+                                <img src="../images/products/pro_ABC100_1-500x500.jpg" class="img_first" alt="banner_1">
+                                <img src="../images/products/stu_basas_A61013_1-500x500.jpg" class="img_second" alt="banner_1">
+                            </div>
+                            <p class="btn btn_review_prod"><i class="fas fa-eye"></i> XEM CHI TIẾT </p>
+                          </a>
+                          <div class="card-body">
+                              <h5>
+                                  <a href="#">Baseball Cap - Be Positive</a>
+                              </h5>
+                              <p>Pink</p>
+                              <p class="bold"><span>275</span>.000VND</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                        <script src="../libs/grid-layout-pagination-hip/lib/hip.js"></script>
+                        <script>
+                          $("#page_prods").hip({
+                            itemsPerPage: 9,
+                            itemsPerRow: 3,
+                            itemGaps: '20px',
+                            paginationPos: 'left'
+                          });
+                        </script>
+                  </section>
+                </article>
+            </div>
+        </div>
+    </main>
+    <!-- on_top_btn -->
+    <a href="#sidebar" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top" title="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- modal login -->
+    <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex w-100">
+              <div class="col-md-12">
+              <img src="../images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
+              <h3 class="modal-title" id="funct_login--title">
+                  CHÀO MỪNG ĐẾN VỚI ANANAS
+              </h3>
+              </div>
+              <div class="inner" id="btn_close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form id="frm_login">
+              <div class="form-group">
+                <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+              </div>
+              <a href="#" id="forget_pass">Quên mật khẩu?</a>
+              <div class="form-group">
+                <button><a href="#">Đăng nhập</a></button>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="d-flex">
+                <div class="col-md-3">
+                    <div class="store d-flex">
+                        <img src="../images/Store.png" alt="">
+                        <a href="#" class="storeBtn btn">TÌM CỬA HÀNG</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="content-foot">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+                                    <li class="head">
+                                       SẢN PHẨM
+                                    </li>
+                                    <li><a href="#">Giày Nam</a></li>
+                                    <li><a href="#">Giày Nữ</a></li>
+                                    <li><a href="#">Thời trang & Phụ kiện</a></li>
+                                    <li><a href="#">Sale off</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+                                    <li class="head">
+                                        VỀ CÔNG TY
+                                    </li>
+                                    <li><a href="#">Dứa tuyển dụng</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Về Ananas</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="menu-bot">
+                                    <div class="head">
+                                        ANANAS SOCIAL
+                                    </div>
+                                    <div class="d-flex ">
+                                        <a href="#" class="socialIcon">
+                                            <img src="../images/icon_social1.png" alt="">
+                                        </a>
+                                        <a href="#" class="socialIcon">
+                                            <img src="../images/icon_social2.png" alt="">
+                                        </a>
+                                        <a href="#" class="socialIcon">
+                                            <img src="../images/icon_social3.png" alt="">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="menu-bot">
+                                    <li class="head">
+                                        THÀNH VIÊN
+                                    </li>
+                                    <li>Trần Thu An 1</li>
+                                    <li>Trần Thu An 2</li>
+                                    <li>Trần Thu An 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="../images/Logo_Ananas_Footer.png" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    Copy
+                                    <i class="fa fa-copyright" aria-hidden="true"></i>
+                                    2020 Ananas. All rights reserved
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="../libs/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="../libs/Glider.js-master/glider.js"></script>
+    <script src="../themes/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+17 colors: [ f5f5dc, 45585a, 574d35, a49c8e, 006964, ddbe78, 999, 0e2366, 624018, f4f4f4, 588732, 6633cc, ff80aa, ffcc00, fc6702, c10013, 000]
+primary-color;  303030
+color-hidden: e6e5e5
+color-hover: #f15f2f
+color-h*-title: #f15f2f
+color-h*-list: #9b9ea4 
+bg-slider: #f1f1f1
+color-tab-sticker: #666
+color-sticker: #919191
+bg-sub-menu: #4c4c4c;
+
+-- using Gilder.js
+--main#san-pham.html
+            <!-- option1 loai san pham kop$-->
+            <!-- option4 dòng sản phẩm pd$-->
+            <!-- option5 giá price$-->
+            
+--main#chi-tiet-san-pham.html
+            <!-- option2 trạng thái state$-->
+            <!-- option6 bộ sưu tập cl$-->
+            <!-- option3 kiểu dáng style$-->
+            <!-- option7 size sản phẩm khac spo$-->
+            <!-- option8 chất liệu mat$-->
+            <!-- option9 size giày s$-->
+            <!-- option10 màu sắc -->
+
+--main#gio-hang 
+--main#khach-hang

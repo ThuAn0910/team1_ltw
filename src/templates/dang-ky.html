@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Ananas</title>
+    <link
+      rel="shortcut icon"
+      href="../images/Logo_Ananas_Header.svg"
+      type="image/x-icon"
+    />
+    <!-- THEME -->
+    <link
+      rel="stylesheet"
+      href="../libs/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../libs/Glider.js-master/glider.css">
+    <link
+      rel="stylesheet"
+      href="../libs/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../themes/css/main.css" />
+    <link rel="stylesheet" href="../themes/css/style_section.css">
+    <!-- JS -->
+    <script src="../libs/jquery/jquery-3.5.1.slim.js"></script>
+    <script src="../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="../libs/Glider.js-master/glider.js"></script>
+    <script src="../themes/js/main.js"></script>
+</head>
+<body>
+            <main id="register_page">
+                <div class="container p-0">
+                    <div class="d-flex box">
+                        <div class="col-md-7 left">
+                            <div class="logo">
+                                <a href="trang-chu.html">
+                                    <img src="../images/Logo_Ananas_Header.png" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <form id="frm_register">
+                                    <div class="d-flex">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ip_lastname">Họ<i>*</i></label>
+                                                <input type="text" name="ip_lastname" id="ip_lastname">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ip_firstname">Tên<i>*</i></label>
+                                                <input type="text" name="ip_firstname" id="ip_firstname">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="ip_username" class="col-md-2">Tên đăng nhập<i>*</i></label>
+                                        <input type="text" name="ip_username" id="ip_username">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="ip_mail">Email</label>
+                                        <input type="email" name="ip_mail" id="ip_mail">
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ip_password" class="col-md-3">Mật khẩu<i>*</i></label>
+                                                <input type="password" name="ip_password" id="ip_password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ip_repassword" class="col-md-4">Lặp lại mật khẩu<i>*</i></label>
+                                                <input type="password" name="ip_repassword" id="ip_repassword">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="ip_phone" class="col-md-2">Số điện thoại<i>*</i></label>
+                                        <input type="text" name="ip_phone" id="ip_phone">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="ip_address" class="col-md-2">Địa chỉ giao hàng<i>*</i></label>
+                                        <input type="text" name="ip_address" id="ip_address">
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="ip_address_nd" class="col-md-2">Địa chỉ khác</label>
+                                        <input type="text" name="ip_address_nd" id="ip_address_nd">
+                                    </div>
+                                        <button id="regis_btn" class="btn">
+                                            Đăng Ký
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                </form>
+                            </div>
+                            <p class="foot">
+                                Bạn đã có sẵn một tài khoản?
+                                <a href="#" data-toggle="modal"             data-target="#funct_login">
+                                    Đăng nhập
+                                </a>
+                            </p>
+                        </div>
+                        <!-- phong bac =] -->
+                        <div class="col-md-5 right">
+                            <div id="register_carousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#register_carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#register_carousel" data-slide-to="1"></li>
+                                    <li data-target="#register_carousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img src="../images/AnanasxLuckyLuke-Pack_poster.png" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../images/poster_2.png" alt="">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../images/poster_3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- <div id="main" class="w-100">NHỚ XÓA TÔI!!!</div> -->
+                <!-- on_top_btn -->
+                  <a href="#sidebar" type="button" id="to_top_btn" class="btn" data-toggle="tooltip" data-placement="top" title="Back to Top">
+                    <i class="fas fa-chevron-up"></i>
+                  </a>
+                  <!-- modal login -->
+                  <div class="modal fade" id="funct_login" tabindex="-1" role="dialog" aria-labelledby="funct_login" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <div class="d-flex w-100">
+                            <div class="col-md-12">
+                            <img src="../images/Logo_Ananas_Header.png" alt="logo" id="funct_login--logo">
+                            <h3 class="modal-title" id="funct_login--title">
+                                CHÀO MỪNG ĐẾN VỚI ANANAS
+                            </h3>
+                            </div>
+                            <div class="inner" id="btn_close">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-body">
+                          <form id="frm_login">
+                            <div class="form-group">
+                              <input type="email" name="ip_email" id="ip_email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" name="ip_pass" id="ip_pass" placeholder="Mật khẩu">
+                            </div>
+                            <a href="#" id="forget_pass">Quên mật khẩu?</a>
+                            <div class="form-group">
+                              <button><a href="#">Đăng nhập</a></button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <p>Chưa có tài khoản tại Ananas? <a href="dang-ky.html">Đăng ký</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</body>
+</html>
