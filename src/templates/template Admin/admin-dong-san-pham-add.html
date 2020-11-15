@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin dong san pham add</title>
+    <link
+            rel="shortcut icon"
+            href="../../images/Logo_Ananas_Header.svg"
+            type="image/x-icon"
+    />
+    <!-- THEME -->
+    <link
+            rel="stylesheet"
+            href="../../libs/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="../../libs/fontawesome-free-5.13.0-web/css/all.css"
+    />
+    <link rel="stylesheet" href="../../themes/css/main.css" />
+    <link rel="stylesheet" href="../../themes/css/style_section.css">
+    <!-- JS -->
+    <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
+    <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="../../themes/js/main.js"></script>
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="container-fluid">
+        <div id="top-head">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col-md-4 col-sm-0"></div>
+                    <div class="col-md-8 col-sm-12">
+                        <ul class="d-flex">
+                            <li>
+                                <img src="../../images/icon_dang_nhap.png" alt="" />
+                                <a href="#" data-toggle="modal" data-target="#funct_login">
+                                    <span id="get_name_user">Admin</span>
+                                </a>
+                            </li>
+                            <li>
+                                <img src="../../images/icon_tra_cuu_don_hang.png" alt="" />
+                                <a href="#">Tra cứu đơn hàng</a>
+                            </li>
+                            <li>
+                                <img src="../../images/icon_tim_cua_hang.png" alt="" />
+                                <a href="#">Tìm cửa hàng</a>
+                            </li>
+                            <li>
+                                <img src="../../images/icon_heart_header.png" alt="" />
+                                <a href="#">Yêu thích</a>
+                            </li>
+                            <li>
+                                <img src="../../images/icon_gio_hang.png" alt="" />
+                                <a href="#">Giỏ hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar" class="bg-light">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col-md-2 d-flex justify-content-center">
+                        <a href="trang-chu.html">
+                            <img src="../../images/Logo_Ananas_Header.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="menu d-flex">
+                            <li class="menu-item">
+                                <a href="#" class="d-flex">
+                                    <h4>SẢN PHẨM</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="menu-sub menu-sub--product">
+                                    <div class="container">
+                                        <ul class="d-flex">
+                                            <li>
+                                                <a href="">
+                                                    <div class="card">
+                                                        <img
+                                                                src="../../images/Menu_Nam.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                        />
+                                                        <div class="card__content">CHO NAM</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="card">
+                                                        <img
+                                                                src="../../images/Menu_Nu.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                        />
+                                                        <div class="card__content">CHO NỮ</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="card">
+                                                        <img
+                                                                src="../../images/Menu_Sale-off.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                        />
+                                                        <div class="card__content">OUTLET SALE</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="card">
+                                                        <img
+                                                                src="../../images/Menu_Phu-kien.jpg"
+                                                                alt=""
+                                                                class="card__image"
+                                                        />
+                                                        <div class="card__content">
+                                                            THỜI TRANG & PHỤ KIỆN
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="d-flex">
+                                    <h4>NAM</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="menu-sub menu-sub--male">
+                                    <div class="container container--w">
+                                        <div class="d-flex my-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="box box--devide">
+                                                    <h3>
+                                                        <a href="#">NỔI BẬT</a>
+                                                    </h3>
+                                                    <div class="box__group">
+                                                        <ul>
+                                                            <li><a href="">Best Seller</a></li>
+                                                            <li><a href="">New Arrival</a></li>
+                                                            <li><a href="">Sale off</a></li>
+                                                        </ul>
+                                                        <div>
+                                                            <div href="#" class="line_head">Tất cả giày</div>
+                                                            <a href="">Pineapple x Lucky Luke</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 ml-5">
+                                                <div class="d-flex">
+                                                    <div class="col-md-6">
+                                                        <div class="box">
+                                                            <h3>
+                                                                <a href="#">GIÀY</a>
+                                                            </h3>
+                                                            <div class="box__group">
+                                                                <ul>
+                                                                    <li class="line_head">Dòng sản phẩm</li>
+                                                                    <li><a href="">Basas</a></li>
+                                                                    <li><a href="">Vintas</a></li>
+                                                                    <li><a href="">Urbas</a></li>
+                                                                    <li><a href="">Pattas</a></li>
+                                                                    <li><a href="">Track 6</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="line_head">Style</li>
+                                                                    <li><a href="">High Top</a></li>
+                                                                    <li><a href="">Low Top</a></li>
+                                                                    <li><a href="">Slip-on</a></li>
+                                                                </ul>
+                                                                <a href="#" class="line_head">Tất cả giày</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="box">
+                                                            <h3>
+                                                                <a href="#">THỜI TRANG & PHỤ KIỆN</a>
+                                                            </h3>
+                                                            <div class="box__group">
+                                                                <ul>
+                                                                    <li class="line_head">Nửa trên</li>
+                                                                    <li><a href="">Basic Tee</a></li>
+                                                                    <li><a href="">Sweetshirt</a></li>
+                                                                    <li><a href="">Hoodie</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="line_head">Phụ kiện</li>
+                                                                    <li><a href="">Nón</a></li>
+                                                                    <li><a href="">Dây giày</a></li>
+                                                                    <li><a href="">Vớ</a></li>
+                                                                </ul>
+                                                                <a href="#" class="line_head">Tất cả giày</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="d-flex">
+                                    <h4>NỮ</h4>
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="menu-sub menu-sub--female">
+                                    <div class="container container--w">
+                                        <div class="d-flex my-3">
+                                            <div class="col-md-4 col-sm-12">
+                                                <div class="box box--devide">
+                                                    <h3>
+                                                        <a href="#">NỔI BẬT</a>
+                                                    </h3>
+                                                    <div class="box__group">
+                                                        <ul>
+                                                            <li><a href="">Best Seller</a></li>
+                                                            <li><a href="">New Arrival</a></li>
+                                                            <li><a href="">Sale off</a></li>
+                                                        </ul>
+                                                        <div>
+                                                            <div href="#" class="line_head">Tất cả giày</div>
+                                                            <a href="">Pineapple x Lucky Luke</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-12 ml-5">
+                                                <div class="d-flex">
+                                                    <div class="col-md-6">
+                                                        <div class="box">
+                                                            <h3>
+                                                                <a href="#">GIÀY</a>
+                                                            </h3>
+                                                            <div class="box__group">
+                                                                <ul>
+                                                                    <li class="line_head">Dòng sản phẩm</li>
+                                                                    <li><a href="">Basas</a></li>
+                                                                    <li><a href="">Vintas</a></li>
+                                                                    <li><a href="">Urbas</a></li>
+                                                                    <li><a href="">Pattas</a></li>
+                                                                    <li><a href="">Track 6</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="line_head">Style</li>
+                                                                    <li><a href="">High Top</a></li>
+                                                                    <li><a href="">Low Top</a></li>
+                                                                    <li><a href="">Slip-on</a></li>
+                                                                </ul>
+                                                                <a href="#" class="line_head">Tất cả giày</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="box">
+                                                            <h3>
+                                                                <a href="#">THỜI TRANG & PHỤ KIỆN</a>
+                                                            </h3>
+                                                            <div class="box__group">
+                                                                <ul>
+                                                                    <li class="line_head">Nửa trên</li>
+                                                                    <li><a href="">Basic Tee</a></li>
+                                                                    <li><a href="">Sweetshirt</a></li>
+                                                                    <li><a href="">Hoodie</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li class="line_head">Phụ kiện</li>
+                                                                    <li><a href="">Nón</a></li>
+                                                                    <li><a href="">Dây giày</a></li>
+                                                                    <li><a href="">Vớ</a></li>
+                                                                </ul>
+                                                                <a href="#" class="line_head">Tất cả giày</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="cameo">--------------------mọi người thường gọi chúng tôi là <span class="color--orange">dứa</span>!--------------------</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="d-flex">
+                                    <h4>SALE OFF</h4>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="d-flex">
+                                    <img src="../../images/DiscoverYOU.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <form id="searchBox">
+                            <div class="form-group d-flex">
+                                <input
+                                        type="text"
+                                        name="searchInput"
+                                        id="searchInput"
+                                        class="form-control"
+                                        placeholder="Bạn cần tìm..."
+                                        aria-describedby="helpId"
+                                />
+                                <button id="searchBtn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="section_banner">
+    <div id="ruleCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <a class="carousel-item active">
+                free shipping hoá đơn từ 800k!
+            </a>
+            <a class="carousel-item">
+                hàng 2 tuần nhận đổi - giày nữa năm bảo hành
+            </a>
+            <a class="carousel-item">
+                buy more pay less - áp dụng khi mua phụ kiện
+            </a>
+        </div>
+        <a class="carousel-control-prev" href="#ruleCarousel" role="button" data-slide="prev">
+            <!-- carousel-control-prev-icon -->
+            <span class="fas fa-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#ruleCarousel" role="button" data-slide="next">
+            <span class="fas fa-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!--main-->
+
+<section id="section_contentAdmin">
+    <div class="container_admin">
+        <div class="row p-3">
+            <div class="sidebar col-md-2 lstMenu-left" >
+                <h5 class="mt-4 mb-4"><i class="fas fa-tachometer-alt mr-2"></i> BẢNG ĐIỀU KHIỂN</h5>
+                <ul class="nav flex-column nav-pills">
+                    <!--Loai san pham-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecCate">
+                            <i class="fas fa-box-open mr-2"></i> Phân Loại <i class="fas fa-ellipsis-h float-right"></i></a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecCate">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Dong san pham-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecStream">
+                            <i class="fas fa-book mr-2"></i> Dòng Sản Phẩm <i class="fas fa-ellipsis-h float-right"></i></a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecStream">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Loai san pham-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show_lstSelecType">
+                            <i class="fas fa-cube mr-2"></i> Loại <i class="fas fa-ellipsis-h float-right"></i></a>
+                    </li>
+                    <div class="collapse" id="show_lstSelecType">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--San Pham-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecProduct">
+                            <i class="fas fa-cubes mr-2 size--20px"></i> Sản phẩm <i class="fas fa-ellipsis-h float-right"></i>
+                        </a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecProduct">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Banner-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecSlider">
+                            <i class="fas fa-sliders-h mr-2"></i> Banner <i class="fas fa-ellipsis-h float-right"></i></a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecSlider">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Hoa don-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecBill">
+                            <i class="fas fa-money-bill-wave mr-2"></i> Hóa đơn <i class="fas fa-ellipsis-h float-right"></i></a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecBill">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
+                            </li>
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Thanh vien-->
+                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecUser">
+                            <i class="fas fa-users mr-2"></i> Thành viên <i class="fas fa-ellipsis-h float-right"></i>
+                        </a>
+                    </li>
+                    <div class="collapse" id="show-lstSelecUser">
+                        <ul class="nav flex-column">
+                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
+                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-10 bg bg-light">
+                <h2 class="mb-5">Dòng sản phẩm  <small>thêm</small></h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="select_nameCate">Phân loại:</label>
+                        <select class="form-control bg bg-secondary text-light w-50" id="select_nameCate">
+                            <option>Giày</option>
+                            <option>Phụ kiện</option>
+                            <option>Thời trang </option>
+                            <option>Sale off</option>
+                        </select><br>
+                        <label for="name_type">Tên dòng sản phẩm:</label>
+                        <input type="text" class="form-control w-50" id="name_type" placeholder="Nhập tên dòng sản phẩm" name="name_type"><br>
+                       <!-- <label for="image_type">Hình loại:</label>
+                        <input type="file" name="image_type" id="image_type" class="form-control w-50"><br>-->
+                        <label for="select_Status">Trạng thái:</label>
+                        <select class="form-control bg bg-secondary text-light w-25" id="select_Status">
+                            <option>Hoạt động</option>
+                            <option>Không hoạt động</option>
+                        </select><br>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Thêm</button>
+                    <button type="reset" class="btn btn-warning">Làm trắng</button>
+                    <button  class="btn btn-danger">Hủy</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="d-flex">
+            <div class="col-md-3">
+                <div class="store d-flex">
+                    <img src="../../images/Store.png" alt="">
+                    <a href="#" class="storeBtn btn">TÌM CỬA HÀNG</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="content-foot">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="menu-bot">
+                                <li class="head">
+                                    SẢN PHẨM
+                                </li>
+                                <li><a href="#">Giày Nam</a></li>
+                                <li><a href="#">Giày Nữ</a></li>
+                                <li><a href="#">Thời trang & Phụ kiện</a></li>
+                                <li><a href="#">Sale off</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="menu-bot">
+                                <li class="head">
+                                    VỀ CÔNG TY
+                                </li>
+                                <li><a href="#">Dứa tuyển dụng</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                                <li><a href="#">Về Ananas</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="menu-bot">
+                                <div class="head">
+                                    ANANAS SOCIAL
+                                </div>
+                                <div class="d-flex ">
+                                    <a href="#" class="socialIcon">
+                                        <img src="../../images/icon_social1.png" alt="">
+                                    </a>
+                                    <a href="#" class="socialIcon">
+                                        <img src="../../images/icon_social2.png" alt="">
+                                    </a>
+                                    <a href="#" class="socialIcon">
+                                        <img src="../../images/icon_social3.png" alt="">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="menu-bot">
+                                <li class="head">
+                                    THÀNH VIÊN
+                                </li>
+                                <li>Trần Thu An </li>
+                                <li>Từ Phước Thiện</li>
+                                <li>Nguyễn Lê Văn Tiến</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="../../images/Logo_Ananas_Footer.png" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                Copy
+                                <i class="fa fa-copyright" aria-hidden="true"></i>
+                                2020 Ananas. All rights reserved
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
