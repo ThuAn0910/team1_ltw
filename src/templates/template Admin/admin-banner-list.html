@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin dòng sản phẩm list</title>
+    <title>Admin banner list</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="../../themes/css/main.css" />
     <link rel="stylesheet" href="../../themes/css/style_section.css">
+    <link rel="stylesheet" href="../../themes/css/admin.css">
     <!-- JS -->
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
@@ -469,15 +470,14 @@
                 </ul>
             </div>
             <div class="col-md-10 bg bg-light">
-                <h2 class="mb-5">Dòng sản phẩm  <small>danh sách</small></h2>
+                <h2 class="mb-5">Slider  <small>danh sách</small></h2>
                 <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
                 <br>
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th>STT</th>
-                        <th>Tên danh mục</th>
-                        <th>Tên loại</th>
+                        <th>Ảnh Slider</th>
                         <th>Trạng thái</th>
                         <th>Sửa</th>
                         <th>Xóa</th>
@@ -486,62 +486,42 @@
                     <tbody id="myTable">
                     <tr>
                         <td>1</td>
-                        <td>Giày</td>
-                        <td>Basas</td>
+                        <td><img src="../../images/banner_aboutUs_2m.png" class="imageBanner" alt=""></td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Giày</td>
-                        <td>Vintas</td>
+                        <td><img src="../../images/banner_aboutUs_2m_2.png" class="imageBanner" alt=""></td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Phụ kiện</td>
-                        <td>Nón</td>
+                        <td><img src="../../images/banner_aboutUs_2m_3.png" class="imageBanner" alt=""></td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Phụ kiện</td>
-                        <td>Dây giày</td>
+                        <td><img src="../../images/Banner_Clothing.png" class="imageBanner" alt=""></td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Thời trang</td>
-                        <td>Hoddie</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Thời trang</td>
-                        <td> vớ</td>
+                        <td><img src="../../images/banner_sale_off.png" class="imageBanner" alt=""></td>
                         <td><i class="fas fa-ban text-danger s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
-
                     </tbody>
                 </table>
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Tiếp</a></li>
-                </ul>
+
             </div>
         </div>
     </div>

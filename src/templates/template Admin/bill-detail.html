@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin dòng sản phẩm list</title>
+    <title>Bill detail</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="../../themes/css/main.css" />
     <link rel="stylesheet" href="../../themes/css/style_section.css">
+    <link rel="stylesheet" href="../../themes/css/admin.css">
     <!-- JS -->
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
@@ -355,198 +356,67 @@
     </div>
 </section>
 <!--main-->
+<div class="col-md-10 bg bg-light">
+    <h2 class="mb-5">Hóa đơn  <small>chi tiết</small></h2>
 
-<section id="section_contentAdmin">
-    <div class="container_admin">
-        <div class="row p-3">
-            <div class="sidebar col-md-2 lstMenu-left" >
-                <h5 class="mt-4 mb-4"><i class="fas fa-tachometer-alt mr-2"></i> BẢNG ĐIỀU KHIỂN</h5>
-                <ul class="nav flex-column nav-pills">
-                    <!--Loai san pham-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecCate">
-                            <i class="fas fa-box-open mr-2"></i> Phân Loại <i class="fas fa-ellipsis-h float-right"></i></a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecCate">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Dong san pham-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecStream">
-                            <i class="fas fa-book mr-2"></i> Dòng Sản Phẩm <i class="fas fa-ellipsis-h float-right"></i></a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecStream">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Loai san pham-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show_lstSelecType">
-                            <i class="fas fa-cube mr-2"></i> Loại <i class="fas fa-ellipsis-h float-right"></i></a>
-                    </li>
-                    <div class="collapse" id="show_lstSelecType">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--San Pham-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecProduct">
-                            <i class="fas fa-cubes mr-2 size--20px"></i> Sản phẩm <i class="fas fa-ellipsis-h float-right"></i>
-                        </a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecProduct">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Banner-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecSlider">
-                            <i class="fas fa-sliders-h mr-2"></i> Banner <i class="fas fa-ellipsis-h float-right"></i></a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecSlider">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Hoa don-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecBill">
-                            <i class="fas fa-money-bill-wave mr-2"></i> Hóa đơn <i class="fas fa-ellipsis-h float-right"></i></a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecBill">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
-                            </li>
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Thanh vien-->
-                    <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                        <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show-lstSelecUser">
-                            <i class="fas fa-users mr-2"></i> Thành viên <i class="fas fa-ellipsis-h float-right"></i>
-                        </a>
-                    </li>
-                    <div class="collapse" id="show-lstSelecUser">
-                        <ul class="nav flex-column">
-                            <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
-                            </li>
-                        </ul>
-                    </div>
-                </ul>
-            </div>
-            <div class="col-md-10 bg bg-light">
-                <h2 class="mb-5">Dòng sản phẩm  <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
-                <br>
-                <table class="table table-bordered table-striped text-center">
-                    <thead>
-                    <tr>
-                        <th>STT</th>
-                        <th>Tên danh mục</th>
-                        <th>Tên loại</th>
-                        <th>Trạng thái</th>
-                        <th>Sửa</th>
-                        <th>Xóa</th>
-                    </tr>
-                    </thead>
-                    <tbody id="myTable">
-                    <tr>
-                        <td>1</td>
-                        <td>Giày</td>
-                        <td>Basas</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Giày</td>
-                        <td>Vintas</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Phụ kiện</td>
-                        <td>Nón</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Phụ kiện</td>
-                        <td>Dây giày</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Thời trang</td>
-                        <td>Hoddie</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Thời trang</td>
-                        <td> vớ</td>
-                        <td><i class="fas fa-ban text-danger s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
 
-                    </tbody>
-                </table>
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Tiếp</a></li>
-                </ul>
+    <div class="collapse show" id="address_collapse">
+        <form id="frm_post_address">
+            <div class="form-group">
+                <label for="getNameCus" class="col-md-3">Họ tên:</label>
+                <input type="text" value="Nguyễn Văn D" name="getNameCus" id="getNameCus" disabled>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="getPhoneCus" class="col-md-3">Số điện thoại:</label>
+                <input type="text" value="0123456" name="getPhoneCus" id="getPhoneCus" disabled>
+            </div>
+            <div class="form-group">
+                <label for="getAddress" class="col-md-3">
+                    Địa chỉ giao hàng:
+                </label>
+                <input type="text" value="7 Cầu Giấy, Hà Nội" name="getAddress" id="getAddress" disabled>
+            </div>
+            <div class="form-group">
+                <label for="getNote" class="col-md-3">
+                    Ghi chú:
+                </label>
+                <input type="text" value="Giao giờ hành chính" name="getAddress" id="getNote" disabled>
+            </div>
+
+        </form>
     </div>
-</section>
 
+
+
+    <br>
+    <table class="table table-bordered table-striped text-center">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Ảnh</th>
+            <th>Giá sản phẩm</th>
+            <th>Size</th>
+            <th>Số lượng </th>
+            <th>Tổng cộng</th>
+
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr>
+            <td>1</td>
+            <td>A61082</td>
+            <td>Basas New Simple Life-Slip On</td>
+            <td> <img src="../../images/products/pro_basas_A61082_1.jpg" class="imageProduct" alt=""></td>
+            <td>500.000</td>
+            <td>31</td>
+            <td>2</td>
+            <td>1.000.000</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 <!--footer-->
 <footer>
     <div class="container">

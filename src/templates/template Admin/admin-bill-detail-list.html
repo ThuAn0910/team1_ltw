@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin dòng sản phẩm list</title>
+    <title>Admin bill detail</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="../../themes/css/main.css" />
     <link rel="stylesheet" href="../../themes/css/style_section.css">
+    <link rel="stylesheet" href="../../themes/css/admin.css">
     <!-- JS -->
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
@@ -469,68 +470,89 @@
                 </ul>
             </div>
             <div class="col-md-10 bg bg-light">
-                <h2 class="mb-5">Dòng sản phẩm  <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
+                <h2 class="mb-5">Hóa đơn chi tiết  <small>danh sách</small></h2>
+                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Tìm kiếm..">
                 <br>
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th>STT</th>
-                        <th>Tên danh mục</th>
-                        <th>Tên loại</th>
+                        <th>Mã Bill</th>
+                        <th>Mã sản phẩm</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Ảnh</th>
+                        <th>Giá sản phẩm</th>
+                        <th>size </th>
+                        <th>Số lượng</th>
+                        <th>Tổng giá</th>
                         <th>Trạng thái</th>
-                        <th>Sửa</th>
-                        <th>Xóa</th>
+
+
                     </tr>
                     </thead>
                     <tbody id="myTable">
                     <tr>
                         <td>1</td>
-                        <td>Giày</td>
-                        <td>Basas</td>
+                        <td>GH14</td>
+                        <td>A45129</td>
+                        <td>Basas Bumper Gum-Hight Top</td>
+                        <td><img src="../../images/products/stu_basas_A61024_1-500x500.jpg" class="imageProduct" alt=""></td>
+                        <td>590.000</td>
+                        <td>36</td>
+                        <td>1</td>
+                        <td>590.000</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Giày</td>
-                        <td>Vintas</td>
+                        <td>GH09</td>
+                        <td>A32110</td>
+                        <td>Basas Momo Black-Low Top</td>
+                        <td><img src="../../images/products/stu_basas_A61013_1-500x500.jpg" class="imageProduct" alt=""></td>
+                        <td>490.000</td>
+                        <td>40</td>
+                        <td>1</td>
+                        <td>490.000</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Phụ kiện</td>
-                        <td>Nón</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td>GH07</td>
+                        <td>A61082 </td>
+                        <td>Basas New Simple Life-Slip On</td>
+                        <td> <img src="../../images/products/pro_basas_A61082_1.jpg" class="imageProduct" alt=""></td>
+                        <td>250.000</td>
+                        <td>31</td>
+                        <td>2</td>
+                        <td>500.000</td>
+                        <td><i class="fas fa-box text-success s-25"></i></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Phụ kiện</td>
-                        <td>Dây giày</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td>GH05</td>
+                        <td>A32110</td>
+                        <td>Basas Gray Black-Low Top</td>
+                        <td><img src="../../images/products/stu_basas_A61003_1-500x500.jpg" class="imageProduct" alt=""></td>
+                        <td>490.000</td>
+                        <td>35</td>
+                        <td>1</td>
+                        <td>490.000</td>
+                        <td><i class="fas fa-truck text-success s-25"></i></td>
+
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td>Thời trang</td>
-                        <td>Hoddie</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Thời trang</td>
-                        <td> vớ</td>
+                        <td>GH02</td>
+                        <td>A61004</td>
+                        <td>Basas Pattas Black-Low Top</td>
+                        <td><img src="../../images/products/stu_basas_A61004_1-500x500.jpg" class="imageProduct" alt=""></td>
+                        <td>690.000</td>
+                        <td>38</td>
+                        <td>1</td>
+                        <td>690.000</td>
                         <td><i class="fas fa-ban text-danger s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
 
                     </tbody>

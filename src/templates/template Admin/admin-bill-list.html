@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin dòng sản phẩm list</title>
+    <title>Admin bill list</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -469,69 +469,81 @@
                 </ul>
             </div>
             <div class="col-md-10 bg bg-light">
-                <h2 class="mb-5">Dòng sản phẩm  <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
+                <h2 class="mb-5">Hóa đơn  <small>danh sách</small></h2>
+                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Tìm kiếm..">
                 <br>
                 <table class="table table-bordered table-striped text-center">
                     <thead>
                     <tr>
                         <th>STT</th>
-                        <th>Tên danh mục</th>
-                        <th>Tên loại</th>
+                        <th>Mã bill</th>
+                        <th>Tên Khách hàng</th>
+                        <th>Tổng giá</th>
+                        <th>Ngày mua</th>
+                        <th>Ghi chú</th>
+                        <th>địa chỉ</th>
                         <th>Trạng thái</th>
-                        <th>Sửa</th>
-                        <th>Xóa</th>
+                        <th>Xem chi tiết</th>
                     </tr>
                     </thead>
                     <tbody id="myTable">
                     <tr>
                         <td>1</td>
-                        <td>Giày</td>
-                        <td>Basas</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td>GH14</td>
+                        <td>Nguyễn Văn D</td>
+                        <td>1.000.000</td>
+                        <td>12/11/2020</td>
+                        <td>7 Cầu Giấy, Hà Nội</td>
+                        <td>Giao giờ hành chính</td>
+                        <td><i class="fas fa-truck text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Giày</td>
-                        <td>Vintas</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td>GH19</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>500.000</td>
+                        <td>15/11/2020</td>
+                        <td>giao kèm quà</td>
+                        <td>5 Trần Phú,P6,Q3</td>
+                        <td><i class="fas fa-box text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td>Phụ kiện</td>
-                        <td>Nón</td>
+                        <td>GH10</td>
+                        <td>Nguyễn Văn C</td>
+                        <td>1.000.000</td>
+                        <td>15/11/2020</td>
+                        <td>Giao nhanh nhé</td>
+                        <td>150 Linh Trung, Thử Đức</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td>Phụ kiện</td>
-                        <td>Dây giày</td>
+                        <td>GH03</td>
+                        <td>Nguyễn Văn B</td>
+                        <td>950.000</td>
+                        <td>11/10/2020</td>
+                        <td>Giao sau 12g trưa</td>
+                        <td>10 Linh Trung, Thủ Đức</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                     </tr>
+
                     <tr>
                         <td>5</td>
-                        <td>Thời trang</td>
-                        <td>Hoddie</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Thời trang</td>
-                        <td> vớ</td>
+                        <td>GH02</td>
+                        <td>Lý Văn C</td>
+                        <td>800.000</td>
+                        <td>2/11/2020</td>
+                        <td>đặt cho vui</td>
+                        <td>21 Xa lộ Hà Nội, Thủ Đức</td>
                         <td><i class="fas fa-ban text-danger s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
-                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                     </tr>
+
 
                     </tbody>
                 </table>
