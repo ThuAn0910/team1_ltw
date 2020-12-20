@@ -25,6 +25,13 @@
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script src="../../themes/js/main.js"></script>
+
+    <script src="../../libs/lib/typeahead.bundle.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../libs/lib/datatables.min.css">
+    <script src="../../libs/lib/datatables.min.js"> </script>
+
+
+
 </head>
 <body>
 <!-- header -->
@@ -356,7 +363,6 @@
     </div>
 </section>
 <!--main-->
-
 <section id="section_contentAdmin">
     <div class="container_admin">
         <div class="row p-3">
@@ -371,10 +377,10 @@
                     <div class="collapse" id="show-lstSelecCate">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-loai-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-loai-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -386,10 +392,10 @@
                     <div class="collapse" id="show-lstSelecStream">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-dong-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-dong-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -401,10 +407,10 @@
                     <div class="collapse" id="show_lstSelecType">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-kieu-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-kieu-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -417,10 +423,10 @@
                     <div class="collapse" id="show-lstSelecProduct">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -432,10 +438,10 @@
                     <div class="collapse" id="show-lstSelecSlider">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-banner-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-banner-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -447,10 +453,10 @@
                     <div class="collapse" id="show-lstSelecBill">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
+                                <a href="admin-bill-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
+                                <a href="admin-bill-detail-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
                             </li>
                         </ul>
                     </div>
@@ -463,7 +469,7 @@
                     <div class="collapse" id="show-lstSelecUser">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-list-user.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -471,9 +477,9 @@
             </div>
             <div class="col-md-10 bg bg-light">
                 <h2 class="mb-5">Sản phẩm  <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
+
                 <br>
-                <table class="table table-bordered table-striped text-center">
+                <table class="table table-bordered table-striped text-center table-fluid" id="myTable">
                     <thead>
                     <tr>
                         <th>STT</th>
@@ -491,7 +497,7 @@
                         <th>Xóa</th>
                     </tr>
                     </thead>
-                    <tbody id="myTable" >
+                    <tbody  >
                     <tr>
                         <td>1</td>
                         <td>Giày</td>
@@ -503,8 +509,8 @@
                         <td>790.000</td>
                         <td>590.000</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href="../chi-tiet-san-pham.html"><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href="admin-san-pham-edit.html"><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
@@ -546,7 +552,7 @@
                         <td>High Top</td>
                         <td>A61101</td>
                         <td>Vintas Mister-High Top-Chocolate Brown</td>
-                        <td><img src="../../images/products/pro_A61101_1_2.jpg" class="imageProduct" alt=""></td>
+                        <td><img src="../../images/products/pro_A61101_1_1.jpg" class="imageProduct" alt=""></td>
                         <td>610.000</td>
                         <td>610.000</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
@@ -565,7 +571,7 @@
                         <td><img src="../../images/products/pro_vintas_A61035_1-1.jpg" class="imageProduct" alt=""></td>
                         <td>480.000</td>
                         <td>400.000</td>
-                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
                         <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
@@ -586,20 +592,311 @@
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Giày</td>
+                        <td> Urbas</td>
+                        <td>Low Top</td>
+                        <td>A61085
+                        </td>
+                        <td>Urbas Inversion - Low Top - C - Navy Blue
+                        </td>
+                        <td><img src="../../images/products/pro_vintas_A61031_1.jpg" class="imageProduct" alt=""></td>
+                        <td>420,000
+                        </td>
+                        <td>320,000
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Giày</td>
+                        <td> Urbas</td>
+                        <td>Low Top</td>
+                        <td>A61085
+                        </td>
+                        <td>Urbas Inversion - Low Top - N - Gold Flame
+                        </td>
+                        <td><img src="../../images/products/pro_A61085_1.jpg" class="imageProduct" alt=""></td>
+                        <td>320.000
+                        </td>
+                        <td>420.000
+
+                        </td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Giày</td>
+                        <td>Urbas</td>
+                        <td>Low Top</td>
+                        <td>A61059
+                        </td>
+                        <td>Urbas Inversion - Low Top - N - Gold Flame
+                        </td>
+                        <td><img src="../../images/products/A60026_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>320.000
+                        </td>
+                        <td>420.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Giày</td>
+                        <td>Pattas</td>
+                        <td>High Top</td>
+                        <td>A61095
+                        </td>
+                        <td>Ananas X Lucky Luke Pattas - High Top - Dalton Yellow
+                        </td>
+                        <td><img src="../../images/products/pro_A61095_1.jpg" class="imageProduct" alt=""></td>
+                        <td>850.000
+                        </td>
+                        <td>800.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Thời Trang</td>
+                        <td>Basic Tee</td>
+                        <td></td>
+                        <td>ABT00013
+                        </td>
+                        <td>Basic Tee - Ananas Typo - Black
+                        </td>
+                        <td><img src="../../images/products/pro_basictee_ABT00013_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>249.000
+                        </td>
+                        <td>249.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>Thời Trang</td>
+                        <td>Basic Tee</td>
+                        <td></td>
+                        <td>ABT000012
+                        </td>
+                        <td>Basic Tee - Ananas Cropped Symbol - Gray Violet
+                        </td>
+                        <td><img src="../../images/products/pro_basictee_ABT00012_1-1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>320.000
+                        </td>
+                        <td>220.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Thời Trang</td>
+                        <td>Basic Tee</td>
+                        <td></td>
+                        <td>ABT000011
+                        </td>
+                        <td>BBasic Tee - Ananas Cropped Symbol - Old Gold
+                        </td>
+                        <td><img src="../../images/products/pro_basictee_ABT00011_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>269.000
+                        </td>
+                        <td>220.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>Thời Trang</td>
+                        <td>Graphic Tee</td>
+                        <td></td>
+                        <td>AGT0003
+                        </td>
+                        <td>Hiphop Graphic Tee - Discover Ananas - Ermine
+                        </td>
+                        <td><img src="../../images/products/pro_AGT0003_2-1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>350.000
+                        </td>
+                        <td>350.000
+
+                        </td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Thời Trang</td>
+                        <td>Graphic Tee</td>
+                        <td></td>
+                        <td>AGT0002
+                        </td>
+                        <td>Hiphop Graphic Tee - Discover Ananas - Ketchup
+                        </td>
+                        <td><img src="../../images/products/AGT0002_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>365.000
+                        </td>
+                        <td>300.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>Thời Trang</td>
+                        <td>Sweatshirt</td>
+                        <td></td>
+                        <td>ASW1004
+                        </td>
+                        <td>Lucky Luke Typo - Sweatshirt - Storm
+                        </td>
+                        <td><img src="../../images/products/pro_ASW1004_1_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>480.000
+                        </td>
+                        <td>420.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>Thời Trang</td>
+                        <td>Sweatshirt</td>
+                        <td></td>
+                        <td>ASW1005
+                        </td>
+                        <td>Cactus LL Symbol Sweatshirt - Golden Orange
+                        </td>
+                        <td><img src="../../images/products/pro_ASW1005_3-1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>500.000
+                        </td>
+                        <td>500.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Phụ kiện</td>
+                        <td>Vớ</td>
+                        <td></td>
+                        <td>ANS013
+                        </td>
+                        <td>Invisible Socks Pack - Ananas Typo - yellow
+                        </td>
+                        <td><img src="../../images/products/pro_ANS013_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>90.000
+                        </td>
+                        <td>85.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Phụ kiện</td>
+                        <td>Vớ</td>
+                        <td></td>
+                        <td>ANS025
+                        </td>
+                        <td>Invisible Socks Pack - Discoveryou- Grey
+                        </td>
+                        <td><img src="../../images/products/pro_ANS025_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>95.000
+                        </td>
+                        <td>90.000
+
+                        </td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>Phụ kiện</td>
+                        <td>Vớ</td>
+                        <td></td>
+                        <td>ASW1005
+                        </td>
+                        <td>Invisible Socks Pack - Ananas Typo - white
+                        </td>
+                        <td><img src="../../images/products/pro_ANS011_1.jpg
+                            " class="imageProduct" alt=""></td>
+                        <td>95.000
+                        </td>
+                        <td>85.000
+
+                        </td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                        <td><a href=""><i class="far fa-eye s-25 text-secondary" title="Xem chi tiết"></i></a></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+
+
+
+
 
                     </tbody>
                 </table>
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Tiếp</a></li>
-                </ul>
+            </div>
+
             </div>
         </div>
-    </div>
+
 </section>
+
 
 <!--footer-->
 <footer>
@@ -686,5 +983,11 @@
         </div>
     </div>
 </footer>
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
+
 </body>
 </html>

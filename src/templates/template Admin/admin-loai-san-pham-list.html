@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin chuan</title>
+    <title>Admin loai san pham list</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -24,6 +24,10 @@
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script src="../../themes/js/main.js"></script>
+    <script src="../../libs/lib/typeahead.bundle.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../libs/lib/datatables.min.css">
+    <script src="../../libs/lib/datatables.min.js"> </script>
+
 </head>
 <body>
 <!-- header -->
@@ -370,10 +374,10 @@
                     <div class="collapse" id="show-lstSelecCate">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-loai-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-loai-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -385,25 +389,25 @@
                     <div class="collapse" id="show-lstSelecStream">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-dong-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-dong-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
                     <!--Loai san pham-->
                     <li class="nav-item border border-top-0 border-left-0 border-right-0">
                         <a class="nav-link bg--lstDash text-info" href="#" data-toggle="collapse" data-target="#show_lstSelecType">
-                            <i class="fas fa-cube mr-2"></i> Style <i class="fas fa-ellipsis-h float-right"></i></a>
+                            <i class="fas fa-cube mr-2"></i> Loại <i class="fas fa-ellipsis-h float-right"></i></a>
                     </li>
                     <div class="collapse" id="show_lstSelecType">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-kieu-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-kieu-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -416,10 +420,10 @@
                     <div class="collapse" id="show-lstSelecProduct">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -431,10 +435,10 @@
                     <div class="collapse" id="show-lstSelecSlider">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-banner-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-banner-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -446,10 +450,10 @@
                     <div class="collapse" id="show-lstSelecBill">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
+                                <a href="admin-bill-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
+                                <a href="admin-bill-detail-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
                             </li>
                         </ul>
                     </div>
@@ -462,7 +466,7 @@
                     <div class="collapse" id="show-lstSelecUser">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-list-user.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -470,9 +474,9 @@
             </div>
             <div class="col-md-10 bg bg-light">
                 <h2 class="mb-5">Phân loại <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">
-                <br>
-                <table class="table table-bordered table-striped text-center">
+<!--                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Search..">-->
+
+                <table class="table table-bordered table-striped text-center" id="myTable">
                     <thead>
                     <tr>
                         <th>STT</th>
@@ -482,12 +486,12 @@
                         <th>Xóa</th>
                     </tr>
                     </thead>
-                    <tbody id="myTable">
+                    <tbody >
                     <tr>
                         <td>1</td>
                         <td>Giày</td>
                         <td><i class="fas fa-check text-success s-25"></i></td>
-                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href="admin-loai-san-pham-edit.html"><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
                     <tr>
@@ -514,7 +518,14 @@
                     <tr>
                         <td>5</td>
                         <td>Dép</td>
-                        <td><i class="fas fa-ban text-success s-25"></i></td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
+                        <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
+                        <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nón bảo hiểm</td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
                         <td><a href=""><i class="fas fa-pencil-alt s-25" title="sửa"></i></a></td>
                         <td><a href=""><i class="fas fa-trash-alt s-25 text-danger" title="xóa"></i></a></td>
                     </tr>
@@ -524,6 +535,11 @@
         </div>
     </div>
 </section>
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
 <!--footer-->
 <footer>
     <div class="container">

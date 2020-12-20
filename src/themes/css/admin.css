@@ -60,7 +60,10 @@
 .box_group{
     width: 700px;
     border-bottom: black 2px dashed;
-
+}
+.imageDeatailProduct{
+    width: 300px;
+    height: 300px;
 }
 .btn{
 font-size: 23px;

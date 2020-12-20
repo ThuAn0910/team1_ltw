@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin bill detail</title>
+    <title>Admin bill detail list</title>
     <link
             rel="shortcut icon"
             href="../../images/Logo_Ananas_Header.svg"
@@ -25,6 +25,10 @@
     <script src="../../libs/jquery/jquery-3.5.1.slim.js"></script>
     <script src="../../libs/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
     <script src="../../themes/js/main.js"></script>
+    <script src="../../libs/lib/typeahead.bundle.min.js"  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../libs/lib/datatables.min.css">
+    <script src="../../libs/lib/datatables.min.js"> </script>
+
 </head>
 <body>
 <!-- header -->
@@ -371,10 +375,10 @@
                     <div class="collapse" id="show-lstSelecCate">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-loai-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-loai-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -386,10 +390,10 @@
                     <div class="collapse" id="show-lstSelecStream">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-dong-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-dong-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -401,10 +405,10 @@
                     <div class="collapse" id="show_lstSelecType">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-kieu-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-kieu-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -417,10 +421,10 @@
                     <div class="collapse" id="show-lstSelecProduct">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-san-pham-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-san-pham-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -432,10 +436,10 @@
                     <div class="collapse" id="show-lstSelecSlider">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
+                                <a href="admin-banner-add.html" class="nav-link text-info"><i class="fas fa-plus-circle ml-4 mr-2"></i> Thêm</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-banner-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
@@ -447,10 +451,10 @@
                     <div class="collapse" id="show-lstSelecBill">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
+                                <a href="admin-bill-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS chi tiết</a>
                             </li>
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
+                                <a href="admin-bill-detail-list.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> DS hóa đơn</a>
                             </li>
                         </ul>
                     </div>
@@ -463,17 +467,18 @@
                     <div class="collapse" id="show-lstSelecUser">
                         <ul class="nav flex-column">
                             <li class="nav-item border border-top-0 border-left-0 border-right-0">
-                                <a href="" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
+                                <a href="admin-list-user.html" class="nav-link text-info"><i class="fas fa-list-ol ml-4 mr-2"></i> Danh sách</a>
                             </li>
                         </ul>
                     </div>
                 </ul>
             </div>
+
             <div class="col-md-10 bg bg-light">
                 <h2 class="mb-5">Hóa đơn chi tiết  <small>danh sách</small></h2>
-                <label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Tìm kiếm..">
+                <!--<label for="myInput"></label><input class="form-control" id="myInput" type="text" placeholder="Tìm kiếm..">-->
                 <br>
-                <table class="table table-bordered table-striped text-center">
+                <table class="table table-bordered table-striped text-center" id="myTable">
                     <thead>
                     <tr>
                         <th>STT</th>
@@ -490,7 +495,7 @@
 
                     </tr>
                     </thead>
-                    <tbody id="myTable">
+                    <tbody >
                     <tr>
                         <td>1</td>
                         <td>GH11</td>
@@ -554,21 +559,79 @@
                         <td>690.000</td>
                         <td><i class="fas fa-ban text-danger s-25"></i></td>
                     </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>GH01</td>
+                        <td>A61007</td>
+                        <td>Basas Pattas Black-Low Top</td>
+                        <td><img src="../../images/products/pro_A61107_1.jpg" class="imageProduct" alt=""></td>
+                        <td>590.000</td>
+                        <td>36</td>
+                        <td>1</td>
+                        <td>590.000</td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>GH11</td>
+                        <td>A61085</td>
+                        <td>Basas Pattas Blue-Low Top</td>
+                        <td><img src="../../images/products/pro_A61085_1.jpg" class="imageProduct" alt=""></td>
+                        <td>590.000</td>
+                        <td>40</td>
+                        <td>1</td>
+                        <td>590.000</td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>GH20</td>
+                        <td>A61086</td>
+                        <td>Vintas Pattas Black- Slip On</td>
+                        <td><img src="../../images/products/pro_A61086_1.jpg" class="imageProduct" alt=""></td>
+                        <td>390.000</td>
+                        <td>36</td>
+                        <td>1</td>
+                        <td>390.000</td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>GH05</td>
+                        <td>AGT0003</td>
+                        <td>Shirt Annas Uplip -Light Brown </td>
+                        <td><img src="../../images/products/pro_AGT0003_2-1.jpg" class="imageProduct" alt=""></td>
+                        <td>430.000</td>
+                        <td>FreeSize</td>
+                        <td>1</td>
+                        <td>430.000</td>
+                        <td><i class="fas fa-check text-success s-25"></i></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>GH08</td>
+                        <td>ASW1004</td>
+                        <td>SweatShirt Hiphop - Storm</td>
+                        <td><img src="../../images/products/pro_ASW1004_1_1.jpg" class="imageProduct" alt=""></td>
+                        <td>390.000</td>
+                        <td>FreeSize</td>
+                        <td>1</td>
+                        <td>390.000</td>
+                        <td><i class="fas fa-ban text-danger s-25"></i></td>
+                    </tr>
 
                     </tbody>
                 </table>
-                <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Tiếp</a></li>
-                </ul>
+
             </div>
         </div>
     </div>
 </section>
-
+<script>
+    $(document).ready( function () {
+        $('#myTable').DataTable();
+    } );
+</script>
 <!--footer-->
 <footer>
     <div class="container">
